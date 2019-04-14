@@ -245,25 +245,33 @@ h5 {
 
 /* === STYLE ELEMENTS for map.html ================== */
 
-/* I used style similar to Prof. K.'s simplemap example. */
+/* I used style similar to Prof. K.'s iit map example. */
 
 /* Always set the map height explicitly to define 
    the size of the div element that contains the map. */
-#page4 {
-  width: 850px;
-	height: 600px;
+#content4 {
+  width: 700px;
+	height: 500px;
 	background-color: pink; /* for testing purpose */
-	margin:0 auto;
+	/*margin: 30px auto; */
+  margin-top: 40px;
 	overflow: hidden;
 }
 
 #istmap {
-	width: 700px;
-	height: 500px;
+	width: 650px;
+	height: 450px;
 	background-color: orange;  /* for testing purpose */
-	margin: 30px auto;
+	margin: 25px 25px auto;
 }
 
+#fmap {
+  font-size: 0.8em;
+  font-weight: 700;
+  color: navy;
+  text-align: center;
+  font-style: oblique;
+}
 
 /* === the end ======================================= */
 
