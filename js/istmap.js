@@ -1,5 +1,4 @@
-
-/* April 13 - Prof K. wants us to add the following code to this file */
+/* Nilufer Anlar, istmap.js */
 
 function initMap(){ 
 
