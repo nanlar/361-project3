@@ -1,4 +1,4 @@
-/* Nilufer Anlar, ITMD-Project2, style.css */
+/* Nilufer Anlar, ITMD-Project3, style.css */
 
 /* 
    I used Modular Scale Minor 3rd, 120% in the 
@@ -242,6 +242,28 @@ h5 {
   float: left;
   margin-bottom: 10px;
 }
+
+/* === STYLE ELEMENTS for map.html ================== */
+
+/* I used style similar to Prof. K.'s simplemap example. */
+
+/* Always set the map height explicitly to define 
+   the size of the div element that contains the map. */
+#page4 {
+  width: 850px;
+	height: 600px;
+	background-color: pink; /* for testing purpose */
+	margin:0 auto;
+	overflow: hidden;
+}
+
+#istmap {
+	width: 700px;
+	height: 500px;
+	background-color: orange;  /* for testing purpose */
+	margin: 30px auto;
+}
+
 
 /* === the end ======================================= */
 
