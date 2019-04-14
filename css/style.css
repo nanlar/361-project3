@@ -250,17 +250,22 @@ h5 {
 /* Always set the map height explicitly to define 
    the size of the div element that contains the map. */
 #content4 {
-  width: 700px;
-	height: 500px;
-	background-color: pink; /* for testing purpose */
+  width: 650px;
+	height: 450px;
+	background-color: gray;
 	/*margin: 30px auto; */
-  margin-top: 40px;
+  margin-top: 0;
 	overflow: hidden;
 }
 
+#mtitle {
+  margin-top: 45px;
+  margin-bottom: 2px;
+}
+
 #istmap {
-	width: 650px;
-	height: 450px;
+	width: 600px;
+	height: 400px;
 	background-color: orange;  /* for testing purpose */
 	margin: 25px 25px auto;
 }
