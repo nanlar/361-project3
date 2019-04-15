@@ -139,7 +139,7 @@ h5 {
   padding: 0;
   font-family: "Open Sans", sans-serif;  /* a Google font */
   font-size: 1em;  /* at 16px, (16px/16px=1em) */
-  line-height: 1.4em;  /* chose more than 120%for better read */
+  line-height: 1.4em;  /* chose more than 120% for better read */
   background-color: #fafafa;
 }
 
@@ -164,6 +164,9 @@ h5 {
 #istsound {
   float: left;
   margin-right: 10px;
+  border-style: solid;
+  border-color: gray;
+  background-color: darkgray;
 }
 
 #imap { 
@@ -197,9 +200,9 @@ h5 {
    backgrounds with colors(it is ~1100px wide). */
 
 #body3 {
-  width: 960px;
+  width: 960px;  /* fixed as Prof recommends */
   margin: 0 auto;
-  background-color: beige;
+  background-color: floralwhite;
 }
 
 #main3 {
@@ -279,14 +282,15 @@ h5 {
   font-style: oblique;
 }
 
+/* =============== MODULAR STYLES ==================== */
+/* 
+  My MEDIA queries are listed below for the hometown page
+  I used a two-column FLUID-WIDTH layout for this page */
 
-/* ===== MODULAR STYLES ============ */
-/* My MEDIA queries are listed below */
-
-/* ===== for tablets ====== */
+/* ====== for tablets ============= */
 @media screen and (min-width: 768px) { 
   #body2{
-    background-color: linen;
+    background-color: #fbf8ef;
   }
   
   #main2 {
@@ -299,13 +303,21 @@ h5 {
   }
 
   #extras2 {
+    font-size: 1em;
     float: left;
-    width: 43%;
+    width: 37%;
     margin: 0 2% auto;
     font-size: 80%;
     font-style: oblique;
   } 
 
+  #istsound {
+    width: 60%;
+    border-style: groove;
+    border-color: darkgray;
+    background-color: gray;
+  }
+  
   #imap { 
     width: 200px; 
     height: 110px;
@@ -317,7 +329,6 @@ h5 {
     width: 300px;
     height: 200px;
     float: right;
-    margin-bottom: 5px;
   }
   
   #footer2 {
@@ -327,15 +338,26 @@ h5 {
 /* ====== for desktops and wide screens ====== */
 @media screen and (min-width: 992px) {
   #body2 {
-    background-color: lightsteelblue;  /* NHA fortesting purpose */
+    background-color: #eff5fb;
   }
   
-  /* increase text style */
+  /* increase line height for easy read */
   #main2 {
+    width: 50%;
     line-height: 1.6em;
   }
+  
   #extras2 {
+    width: 43%;
     font-size: 0.9em;
+    font-weight: 700;
+  }
+  
+  /* try intersting border */
+  #istsound {
+    border-style: double;
+    border-color: navy;
+    background-color: lightgray;
   }
   
   /* make map image and video bigger */
