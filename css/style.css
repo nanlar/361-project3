@@ -16,12 +16,12 @@ h2 {
   margin-top: 3em;  /* at 48 px, (48px/16px=3.75em) */
 }
 
-.nav {
+#navigation {
   position: absolute;  /* forces it over h1 heading */
   width: 100%;
   top: 0;  /* forces it to the top */
   left: 0;  /* forces it to the entire screen */
-  font-family: "Times New Roman", serif;  /* same for all nav */
+  font-family: "Times New Roman", Georgia, serif;  /* same for all nav */
   background-color: gray;
 }
 
@@ -36,18 +36,18 @@ h2 {
 
 #navigation li {
   float: left;
-  margin: 0 0.625em;  /* at 10px, (10px/16px=0.625em) */
+  margin: 0 0.125em;  /* at 2px, (2px/16px=0.125em) */
 }
 
 #navigation ul li a {
   display: block;
   background-color: royalblue;
   color: white;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
   text-align: center;
-  width: 100px;
-  padding: 0.625em 0 0.5em 0;  /* at 10px (10px/16px=0.625em), at 8px (8px/16px=0.5em) */
+  width: 82px;
+  padding: 0.5em 0 0.5em 0;  /* at 8px (8px/16px=0.5em) */
   border-radius: 0;
 }
 
@@ -139,7 +139,7 @@ h5 {
   font-size: 1em;  /* at 16px, (16px/16px=1em) */
   line-height: 1.25em;  /* ~120% at 20px, (20px/16px=1.125em) */
   color: darkblue;
-  background-color: lightblue;
+  background-color: gainsboro;
 }
 
 #main2 {
@@ -173,10 +173,12 @@ h5 {
   margin-right: 10px;
 }
 
-#istmap {
+/* TESTING now */
+#imap { 
+  width: 150px; 
+  height: 100px;
   float: left;
-  margin-right: 15px;
-  margin-bottom: 5px;
+  margin-right: 10px;
 }
 
 #istpics {
@@ -249,7 +251,7 @@ h5 {
 /* Always set the map height explicitly to define 
    the size of the div element that contains the map. */
 #page4{
-  background-color: gainsboro;
+  background-color: silver;
 }
 
 #content4 {
