@@ -1,5 +1,4 @@
 /* Nilufer Anlar, ITMD-Project3, style.css */
-
 /* 
    I used Modular Scale Minor 3rd, 120% in the 
    Math calculations below.
@@ -129,6 +128,7 @@ h5 {
 
 /* === STYLE ELEMENTS for hometown.html =======================*/
 /* I used a two-column FLUID-WIDTH layout for this page. */
+/* I also made this page mobile-friendly for Project 3 */
    
 /* my wrapper */
 #body2 {
@@ -138,13 +138,13 @@ h5 {
   font-family: "Open Sans", sans-serif;  /* a Google font */
   font-size: 1em;  /* at 16px, (16px/16px=1em) */
   line-height: 1.25em;  /* ~120% at 20px, (20px/16px=1.125em) */
-  color: darkblue;
   background-color: gainsboro;
 }
 
 #main2 {
   float: left;
   width: 54%;
+  color: darkblue;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 2%;
@@ -270,7 +270,7 @@ h5 {
 #istmap {
 	width: 600px;
 	height: 400px;
-	background-color: orange;  /* for testing purpose */
+	background-color: orange;  /* NHA for testing purpose */
 	margin: 25px 25px auto;
 }
 
@@ -290,53 +290,71 @@ h5 {
 /* ===== for tablets ====== */
 @media screen and (min-width: 768px) { 
   #body2{
-    background-color: gainsboro;  /* for testing purpose */
+    background-color: pink;  /* for testing purpose */
   }
   
   #main2 {
-  float: left;
-  width: 64%;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 2%;
-  margin-right: 0;
-}
+    float: left;
+    width: 58%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2%;
+    margin-right: 0;
+  }
 
-#extras2 {
-  float: left;
-  width: 30%;
-  margin: 0 2% auto;
-  font-size: 80%;
-  font-style: oblique;
-}
+  #extras2 {
+    float: left;
+    width: 36%;
+    margin: 0 2% auto;
+    font-size: 80%;
+    font-style: oblique;
+  } 
 
-#footer2 {
-  clear: both;
+  #imap { 
+    width: 200px; 
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  #istvideo {
+    width: 300px;
+    height: 200px;
+    float: right;
+    margin-bottom: 5px;
+  }
   
-} 
-
-#imap { 
-  width: 250px; 
-  height: 160px;
-  float: left;
-  margin-right: 10px;
-}
-
-#istvideo {
-  width: 350px;
-  height: 250px;
-  float: right;
-  margin-bottom: 5px;
-}
+  #footer2 {
+    clear: both;
+  }
 
 /* ====== for desktops and wide screens ====== */
 @media screen and (min-width: 992px) {
-  /* set the body width to fixed size */
   #body2 {
-    background-color: lightsteelblue;  /* fortesting purpose */
+    background-color: lightsteelblue;  /* NHA fortesting purpose */
   }
   
+  /* increase text style */
+  #main2 {
+    line-height: 1.6em;
+  }
+  #extras2 {
+    font-size: 0.9em;
+  }
   
+  /* make map image and video bigger */
+  #imap { 
+    width: 300px; 
+    height: 200px;
+    margin-right: 10px;
+  }
+  #istvideo {
+    width: 400px;
+    height: 230px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
 }
   
 /* ====== end ============================= */
