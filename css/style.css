@@ -55,7 +55,6 @@ h2 {
   background-color: indianred;
   color: black;
   border-radius: 0;
-
 }
 
 .clear {
@@ -191,7 +190,7 @@ h5 {
 
 /* === STYLE ELEMENTS for dogs.html ================== */
 
-/* I used a two-column FIXED-WIDTH layout for this page.
+/* I used a two-column 960 FIXED-WIDTH layout for this page.
    NOTE: 
    BUT for some reason, it did NOT cover my entire PC screen.
    Because my PC(LG Gram) screen is much wider than 960px as
@@ -249,6 +248,10 @@ h5 {
 
 /* Always set the map height explicitly to define 
    the size of the div element that contains the map. */
+#page4{
+  background-color: gainsboro;
+}
+
 #content4 {
   width: 650px;
 	height: 450px;
@@ -278,7 +281,28 @@ h5 {
   font-style: oblique;
 }
 
-/* === the end ======================================= */
 
-/* === placeholder for media queries ==================*/
+/* ===== MODULAR STYLES ================= */
 
+/* My MEDIA queries are listed below */
+
+/* ===== for tablets ====== */
+@media screen and (min-width: 768px) { 
+  #body2{
+    background-color: gainsboro;  /* for testing purpose */
+  }
+  
+  
+} 
+
+/* ====== for desktops and wide screens ====== */
+@media screen and (min-width: 992px) {
+  /* set the body width to fixed size */
+  #body2 {
+    background-color: lightsteelblue;  /* fortesting purpose */
+  }
+  
+  
+}
+  
+/* ====== end ============================= */
