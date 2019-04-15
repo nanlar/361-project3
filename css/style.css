@@ -137,7 +137,7 @@ h5 {
   padding: 0;
   font-family: "Open Sans", sans-serif;  /* a Google font */
   font-size: 1em;  /* at 16px, (16px/16px=1em) */
-  line-height: 1.25em;  /* ~120% at 20px, (20px/16px=1.125em) */
+  line-height: 1.3em;  /* chose more than 120%for better read */
   background-color: #fafafa;
 }
 
@@ -148,7 +148,7 @@ h5 {
 }
 
 #extras2 {
-  width: 92%; /* for mobile-friendly */
+  /* width: 95%; NHA for mobile-friendly */
   float: left;
   margin: 0 3% auto;
   font-size: 90%;
@@ -182,7 +182,7 @@ h5 {
 }
 
 #istvideo {
-  width: 95%;  /* mobile-friendly */
+  width: 96%;  /* mobile-friendly */
   float: left;
   margin-bottom: 10px;
 }
@@ -191,10 +191,9 @@ h5 {
 
 /* I used a two-column 960 FIXED-WIDTH layout for this page.
    NOTE: 
-   BUT for some reason, it did NOT cover my entire PC screen.
-   Because my PC(LG Gram) screen is much wider than 960px as
-   I tested the backgrounds with colors(it is ~1100px wide).
-   Therefore, I need Prof. Krieglstein's input. */
+   It did NOT cover my entire PC screen. Because my PC(LG)
+   screen is much wider than 960px. I tested with diffeerent
+   backgrounds with colors(it is ~1100px wide). */
 
 #body3 {
   width: 960px;
@@ -242,8 +241,7 @@ h5 {
 }
 
 /* === STYLE ELEMENTS for map.html ================== */
-
-/* I used style similar to Prof. K.'s iit map example. */
+/* I used style similar to Prof. K.'s iitmap example. */
 
 /* Always set the map height explicitly to define 
    the size of the div element that contains the map. */
@@ -281,14 +279,13 @@ h5 {
 }
 
 
-/* ===== MODULAR STYLES ================= */
-
+/* ===== MODULAR STYLES ============ */
 /* My MEDIA queries are listed below */
 
 /* ===== for tablets ====== */
 @media screen and (min-width: 768px) { 
   #body2{
-    background-color: linen;  /* NHA for testing purpose */
+    background-color: linen;
   }
   
   #main2 {
@@ -296,13 +293,13 @@ h5 {
     width: 50%;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 3%;
+    margin-left: 2%;
     margin-right: 0;
   }
 
   #extras2 {
     float: left;
-    width: 44%;
+    width: 43%;
     margin: 0 2% auto;
     font-size: 80%;
     font-style: oblique;
