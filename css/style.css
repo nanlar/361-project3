@@ -138,24 +138,20 @@ h5 {
   font-family: "Open Sans", sans-serif;  /* a Google font */
   font-size: 1em;  /* at 16px, (16px/16px=1em) */
   line-height: 1.25em;  /* ~120% at 20px, (20px/16px=1.125em) */
-  background-color: #fafafa;  /* NHA gainsboro */
+  background-color: #fafafa;
 }
 
 #main2 {
   float: left;
-  width: 54%;
   color: darkblue;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 2%;
-  margin-right: 0;
+  margin: 0 3% 0 3%;
 }
 
 #extras2 {
+  width: 95%; /* for mobile-friendly */
   float: left;
-  width: 40%;
-  margin: 0 2% auto;
-  font-size: 80%;
+  margin: 0 3% auto;
+  font-size: 90%;
   font-style: oblique;
 }
 
@@ -174,19 +170,20 @@ h5 {
 }
 
 #imap { 
-  width: 150px; 
-  height: 100px;
+  width: 200px; 
+  height: 120px;
   float: left;
   margin-right: 10px;
 }
 
 #istpics {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 #istvideo {
-  float: right;
-  margin-bottom: 5px;
+  width: 95%;  /* mobile-friendly */
+  float: left;
+  margin-bottom: 10px;
 }
 
 /* === STYLE ELEMENTS for dogs.html ================== */
@@ -290,7 +287,7 @@ h5 {
 /* ===== for tablets ====== */
 @media screen and (min-width: 768px) { 
   #body2{
-    background-color: pink;  /* for testing purpose */
+    background-color: linen;  /* NHA for testing purpose */
   }
   
   #main2 {
@@ -312,7 +309,7 @@ h5 {
 
   #imap { 
     width: 200px; 
-    height: 150px;
+    height: 110px;
     float: left;
     margin-right: 10px;
   }
@@ -345,7 +342,7 @@ h5 {
   /* make map image and video bigger */
   #imap { 
     width: 300px; 
-    height: 200px;
+    height: 180px;
     margin-right: 10px;
   }
   #istvideo {
