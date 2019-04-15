@@ -127,8 +127,10 @@ h5 {
 }
 
 /* === STYLE ELEMENTS for hometown.html =======================*/
-/* I used a two-column FLUID-WIDTH layout for this page. */
-/* I also made this page mobile-friendly for Project 3 */
+/* Please note:
+   I used a two-column FLUID-WIDTH layout for this page for my
+   Project 2. Since I also made this page mobile-friendly in
+   Project 3, I had to move two-column layout to media queries. */
    
 /* my wrapper */
 #body2 {
@@ -137,8 +139,13 @@ h5 {
   padding: 0;
   font-family: "Open Sans", sans-serif;  /* a Google font */
   font-size: 1em;  /* at 16px, (16px/16px=1em) */
-  line-height: 1.3em;  /* chose more than 120%for better read */
+  line-height: 1.4em;  /* chose more than 120%for better read */
   background-color: #fafafa;
+}
+
+#header2 h2 {
+  color: darkblue;  /* same as the main text */
+  text-align: center;
 }
 
 #main2 {
@@ -148,20 +155,10 @@ h5 {
 }
 
 #extras2 {
-  /* width: 95%; NHA for mobile-friendly */
   float: left;
   margin: 0 3% auto;
   font-size: 90%;
   font-style: oblique;
-}
-
-#footer2 {
-  clear: both;
-}
-
-#header2 h2 {
-  color: darkblue;  /* same as the main text */
-  text-align: center;
 }
 
 #istsound {
@@ -174,17 +171,21 @@ h5 {
   height: 120px;
   float: left;
   margin-right: 10px;
-  margin-bottom: 5px;
 }
 
 #istpics {
+  width: 98%;  /* mobile-friendly */
   margin-top: 5px;
 }
 
 #istvideo {
-  width: 96%;  /* mobile-friendly */
+  width: 98%;  /* mobile-friendly */
   float: left;
   margin-bottom: 10px;
+}
+
+#footer2 {
+  clear: both;
 }
 
 /* === STYLE ELEMENTS for dogs.html ================== */
