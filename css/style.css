@@ -267,7 +267,7 @@ h5 {
   width: 650px;
 	height: 450px;
 	background-color: gray;
-  margin-top: 0;
+  margin-top: 0 auto;
 	overflow: hidden;
 }
 
@@ -280,7 +280,7 @@ h5 {
 	width: 600px;
 	height: 400px;
 	background-color: orange;  /* NHA for testing purpose */
-	margin: 25px 25px auto;
+	margin: 25px auto;
 }
 
 #fmap {
