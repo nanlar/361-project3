@@ -4,10 +4,14 @@ function initMap(){
   // the location of Istanbul as obtained from Google Maps
   var istanbul = {lat: 41.015161, lng: 28.939397};
 
+  var mapDiv = document.getElementById("istmap");
+
   // my map, centered at Istanbul
-  var map = new google.maps.Map(document.getElementById("istmap"), {zoom: 10, center: istanbul});
+  
+  //var map = new google.maps.Map(document.getElementById("istmap"), {zoom: 10, center: istanbul});
+  var map = new google.maps.Map(mapDiv, {zoom: 10, center: istanbul});
       
-  // positio the marker at istanbulanbul and add a title
+  // position the marker at istanbulanbul and add a title
   var marker = new google.maps.Marker({position: istanbul, map: map, title: "My Hometown Istanbul"});
 
   // add some text about the istanbul 
@@ -19,9 +23,14 @@ function initMap(){
   marker.addListener('click', function() {
           infowindow.open(map, marker);
         });
+        
+  google.maps.event.addDomListener(mapDiv, 'click', function() {
+          window.alert('Map was clicked!');
+        });
+  
 }
 
-// have my map function loaded
-google.maps.event.addDomListener("istmap", "click", initMap);
+// the following line generates javascript undefined error!
+// google.maps.event.addDomListener(window, "load", initMap);
 
 
