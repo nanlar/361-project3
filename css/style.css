@@ -265,25 +265,20 @@ h5 {
 }
 
 #mmap {
-  width: 100%;  /* NHA test */
-}
-
-#mmap h2 {
-  color: darkslategray;
-  margin-left: 25px;
+  /* width: 100%;  NHA test */
 }
 
 #content4 {
   width: 650px;
 	height: 450px;
 	background-color: gray;
-  margin: 0;  /* important, set this way auto deleted */
+  margin: 0 auto;  /* important, set this way auto not deleted */
 	overflow: hidden;
 }
 
 #mtitle {
-  margin-top: 45px;
-  margin-bottom: 2px;
+  color: darkslategray;
+  margin-left: 25px;
 }
 
 #istmap {
