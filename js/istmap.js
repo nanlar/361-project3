@@ -23,11 +23,6 @@ function initMap(){
   marker.addListener('click', function() {
           infowindow.open(map, marker);
         });
-        
-  google.maps.event.addDomListener(mapDiv, 'click', function() {
-          window.alert('Map was clicked!');
-        });
-  
 }
 
 // the following line generates javascript undefined error!
