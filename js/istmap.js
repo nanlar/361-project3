@@ -13,15 +13,20 @@ function initMap(){
   var ist = {lat: 41.015161, lng: 28.939397};
 
   // the map, centered at Istanbul
-  var map = new google.maps.Map(document.getElementById("istmap"), {zoom: 8, center: ist});
+  var map = new google.maps.Map(document.getElementById("istmap"), {zoom: 10, center: ist});
       
-  // marker, positioned at istanbul with a title
+  // my marker, positioned at istanbul with a title
   var marker = new google.maps.Marker({position: ist, map: map, title: "My Hometown Istanbul"});
 
-  // NHA test area below 
-  var contentString = "test1" + "test2";
+  // add some text about the place 
+  var contentString = "Istanbul is the most populous city in Turkey and the country's economic, cultural and historic center." + " With a total population of around 15 million residents in its metropolitan area, it is also one of the world's most populous cities, ranking as the world's fourth largest city proper and the largest European city.";
             
   var infowindow = new google.maps.InfoWindow({content: contentString});
+  
+  // show the infowindow contaents when marker is clicked
+  marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
 
 }
 
