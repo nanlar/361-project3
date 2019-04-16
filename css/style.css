@@ -260,8 +260,12 @@ h5 {
 
 /* Always set the map height explicitly to define 
    the size of the div element that contains the map. */
-#page4{
+#page4 {
   background-color: silver;
+}
+
+#mmap {
+  width: 100%;  /* NHA test */
 }
 
 #mmap h2 {
