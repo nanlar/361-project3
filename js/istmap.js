@@ -1,14 +1,6 @@
-/* Nilufer Anlar, istanbulmap.js */
+/* Nilufer Anlar, istmap.js */
 
-// jQuery 3.x-style ready event and locally scoped $
-jQuery(function($) {
-  $('html').removeClass('nojs');
-  $('html').addClass('hasjs');
-});
-
-// my javascript for my map
 function initMap(){ 
-
   // the location of Istanbul as obtained from Google Maps
   var istanbul = {lat: 41.015161, lng: 28.939397};
 
@@ -31,7 +23,6 @@ function initMap(){
   marker.addListener('click', function() {
           infowindow.open(map, marker);
         });
-
 }
 
 // have my map function loaded
