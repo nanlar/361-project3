@@ -126,7 +126,7 @@ h5 {
   font-size: 90%;
 }
 
-/* === STYLE ELEMENTS for hometown.html =======================*/
+/* === STYLE ELEMENTS for hometown.html ============*/
 /* Please note:
    I used a two-column FLUID-WIDTH layout for this page for my
    Project 2. Since I also made this page mobile-friendly in
@@ -139,7 +139,6 @@ h5 {
   padding: 0;
   font-family: "Open Sans", sans-serif;  /* a Google font */
   font-size: 1em;  /* at 16px, (16px/16px=1em) */
-  line-height: 1.4em;  /* chose more than 120% for better read */
   background-color: #fafafa;
 }
 
@@ -149,6 +148,7 @@ h5 {
 }
 
 #main2 {
+  line-height: 1.4em;  /* more than 120% for better read */
   float: left;
   color: darkblue;
   margin: 0 3% 0 3%;
@@ -202,7 +202,7 @@ h5 {
 #body3 {
   width: 960px;  /* fixed as Prof recommends */
   margin: 0 auto;
-  background-color: floralwhite;
+  background-color: floralwhite; /* NHA test beige; */
 }
 
 #main3 {
@@ -303,12 +303,11 @@ h5 {
   }
 
   #extras2 {
-    font-size: 1em;
     float: left;
     width: 37%;
     margin: 0 2% auto;
-    font-size: 80%;
     font-style: oblique;
+    line-height: 1.3em;  /* little bigger */
   } 
 
   #istsound {
@@ -344,13 +343,12 @@ h5 {
   /* increase line height for easy read */
   #main2 {
     width: 50%;
-    line-height: 1.6em;
   }
   
   #extras2 {
     width: 43%;
-    font-size: 0.9em;
-    font-weight: 700;
+    font-size: 1em;
+    font-weight: 500;  /* not too bold */
   }
   
   /* try intersting border */
