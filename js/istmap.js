@@ -15,11 +15,16 @@ function initMap(){
   // the map, centered at Istanbul
   var map = new google.maps.Map(document.getElementById("istmap"), {zoom: 8, center: ist});
       
-  // marker, positioned at istanbul
-  var marker = new google.maps.Marker({position: ist, map: map});
+  // marker, positioned at istanbul with a title
+  var marker = new google.maps.Marker({position: ist, map: map, title: "My Hometown Istanbul"});
 
+  // NHA test area below 
+  var contentString = "test1" + "test2";
+            
+  var infowindow = new google.maps.InfoWindow({content: contentString});
 
 }
 
-// do I still need the function loaded as below??
+// have the function loaded
 google.maps.event.addDomListener(window, "load", initMap);
+

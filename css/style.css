@@ -202,7 +202,7 @@ h5 {
 #body3 {
   width: 960px;  /* fixed as Prof recommends */
   margin: 0 auto;
-  background-color: floralwhite; /* NHA test beige; */
+  background-color: floralwhite;
 }
 
 #main3 {
@@ -253,11 +253,20 @@ h5 {
   background-color: silver;
 }
 
+#mmap h2 {
+  color: darkslategray;
+  margin-left: 30px;  /* NHA adjust later */
+}
+
+#mmap {
+  position: relative;  /* NHA test */
+  margin: 30px auto; /* NHA test */
+}
+
 #content4 {
   width: 650px;
 	height: 450px;
 	background-color: gray;
-	/*margin: 30px auto; */
   margin-top: 0;
 	overflow: hidden;
 }
@@ -278,8 +287,9 @@ h5 {
   font-size: 0.8em;
   font-weight: 700;
   color: navy;
-  text-align: center;
+  /* text-align: center; NHA test */
   font-style: oblique;
+  margin-left: 30px;
 }
 
 /* =============== MODULAR STYLES ==================== */
