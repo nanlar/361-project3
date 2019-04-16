@@ -127,10 +127,21 @@ h5 {
 }
 
 /* === STYLE ELEMENTS for hometown.html ============*/
-/* Please note:
-   I used a two-column FLUID-WIDTH layout for this page for my
-   Project 2. Since I also made this page mobile-friendly in
-   Project 3, I had to move two-column layout to media queries. */
+/* Please NOTE:
+   1. I used a two-column FLUID-WIDTH layout for 
+      this page for my Project2. 
+   2. Since I made this page mobile-friendly for 
+      Project3, I moved the two-column layout to my 
+      media queries for easy read on mobiles. 
+   3. My audio file works on Chrome, Edge, Firefox, Opera
+      and my iPad (which has an older version of Safari).
+      Even though it used to work on my iPhone6 before, 
+      it is no longer working now, after I moved to a 
+      later version of Safari. I recorded it on my iPhone6
+      and used that same audio file, but still not working.
+      After many google searches, still cannot make it work. 
+      Any feedback will be appreciated.
+*/
    
 /* my wrapper */
 #body2 {
@@ -255,7 +266,7 @@ h5 {
 
 #mmap h2 {
   color: darkslategray;
-  margin-left: 25px;  /* NHA adjust later */
+  margin-left: 25px;
 }
 
 #mmap {
@@ -279,7 +290,7 @@ h5 {
 #istmap {
 	width: 600px;
 	height: 400px;
-	background-color: orange;  /* NHA for testing purpose */
+	background-color: blue;  /* NHA test */
 	margin: 25px auto;
 }
 
@@ -287,7 +298,6 @@ h5 {
   font-size: 0.8em;
   font-weight: 700;
   color: navy;
-  /* text-align: center; NHA test */
   font-style: oblique;
   margin-left: 25px;
 }
