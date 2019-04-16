@@ -277,7 +277,7 @@ h5 {
   width: 650px;
 	height: 450px;
 	background-color: gray;
-  margin: 0 auto;  /* important, set this way */
+  margin: 0;  /* important, set this way auto deleted */
 	overflow: hidden;
 }
 
