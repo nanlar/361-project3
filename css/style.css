@@ -255,12 +255,12 @@ h5 {
 
 #mmap h2 {
   color: darkslategray;
-  margin-left: 30px;  /* NHA adjust later */
+  margin-left: 25px;  /* NHA adjust later */
 }
 
 #mmap {
   position: relative;  /* NHA test */
-  margin: 30px auto; /* NHA test */
+  margin: 25px auto; /* NHA test */
 }
 
 #content4 {
@@ -289,7 +289,7 @@ h5 {
   color: navy;
   /* text-align: center; NHA test */
   font-style: oblique;
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
 /* =============== MODULAR STYLES ==================== */

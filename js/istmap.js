@@ -1,4 +1,4 @@
-/* Nilufer Anlar, istmap.js */
+/* Nilufer Anlar, istanbulmap.js */
 
 // jQuery 3.x-style ready event and locally scoped $
 jQuery(function($) {
@@ -6,20 +6,20 @@ jQuery(function($) {
   $('html').addClass('hasjs');
 });
 
-// my javascript for map
+// my javascript for my map
 function initMap(){ 
 
   // the location of Istanbul as obtained from Google Maps
-  var ist = {lat: 41.015161, lng: 28.939397};
+  var istanbul = {lat: 41.015161, lng: 28.939397};
 
-  // the map, centered at Istanbul
-  var map = new google.maps.Map(document.getElementById("istmap"), {zoom: 10, center: ist});
+  // my map, centered at Istanbul
+  var map = new google.maps.Map(document.getElementById("istmap"), {zoom: 10, center: istanbul});
       
-  // my marker, positioned at istanbul with a title
-  var marker = new google.maps.Marker({position: ist, map: map, title: "My Hometown Istanbul"});
+  // positio the marker at istanbulanbul and add a title
+  var marker = new google.maps.Marker({position: istanbul, map: map, title: "My Hometown Istanbul"});
 
-  // add some text about the place 
-  var contentString = "<h3>Istanbul is the most populous city in Turkey and the country's economic, cultural and historic center.</h3>" + "<p>With a total population of around 15 million residents in its metropolitan area, it is also one of the world's most populous cities, ranking as the world's fourth largest city proper and the largest European city.</p>";
+  // add some text about the istanbul 
+  var contentString = "<h3>Istanbul is the most populous city in Turkey and the country's economic, cultural and histanbuloric center.</h3>" + "<p>With a total population of around 15 million residents in its metropolitan area, it is also one of the world's most populous cities, ranking as the world's fourth largest city proper and the largest European city.</p>";
             
   var infowindow = new google.maps.InfoWindow({content: contentString});
   
@@ -31,5 +31,5 @@ function initMap(){
 }
 
 // have the function loaded
-google.maps.event.addDomListener(window, "load", initMap);
+google.maps.event.addDomListanbulener(window, "load", initMap);
 
