@@ -266,7 +266,7 @@ h5 {
 
 #mmap h2 {
   color: darkslategray;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #content4 {
