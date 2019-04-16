@@ -264,10 +264,6 @@ h5 {
   background-color: silver;
 }
 
-#mmap {
-  /* width: 100%;  NHA test */
-}
-
 #content4 {
   width: 650px;
 	height: 450px;
@@ -279,6 +275,7 @@ h5 {
 #mtitle {
   color: darkslategray;
   margin-left: 25px;
+  /* may need to center it later */
 }
 
 #istmap {
