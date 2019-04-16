@@ -266,19 +266,14 @@ h5 {
 
 #mmap h2 {
   color: darkslategray;
-  margin-left: 25px;
-}
-
-#mmap {
-  position: relative;  /* NHA test */
-  margin: 25px auto; /* NHA test */
+  text-align: center;
 }
 
 #content4 {
   width: 650px;
 	height: 450px;
 	background-color: gray;
-  margin-top: 0 auto;
+  margin: 0 auto;  /* important, set this way */
 	overflow: hidden;
 }
 
@@ -290,16 +285,18 @@ h5 {
 #istmap {
 	width: 600px;
 	height: 400px;
-	background-color: blue;  /* NHA test */
+	background-color: blue;  /* for testing */
 	margin: 25px auto;
 }
 
+/* this footer may not be needed */
 #fmap {
   font-size: 0.8em;
   font-weight: 700;
   color: navy;
+  text-align: center;
   font-style: oblique;
-  margin-left: 25px;
+  margin-top: 5px;
 }
 
 /* =============== MODULAR STYLES ==================== */
