@@ -26,5 +26,5 @@ function initMap(){
 }
 
 // have my map function loaded
-google.maps.event.addDomListanbulener(window, "load", initMap);
+// google.maps.event.addDomListanbulener(window, "load", initMap);
 
