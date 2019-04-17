@@ -7,7 +7,8 @@ function initMap(){
   var mapDiv = document.getElementById("istmap");
 
   // my map, centered at Istanbul
-  
+  // tried two ways of creating the map object below, used the 2nd one
+ 
   //var map = new google.maps.Map(document.getElementById("istmap"), {zoom: 10, center: istanbul});
   var map = new google.maps.Map(mapDiv, {zoom: 10, center: istanbul});
       
@@ -25,7 +26,8 @@ function initMap(){
         });
 }
 
-// the following line generates javascript undefined error!
+// the following line generates javascript undefined error on Inspect console 
+// therefore commented out for now, waiting Prof. input
 // google.maps.event.addDomListener(window, "load", initMap);
 
 
