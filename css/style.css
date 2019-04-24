@@ -211,7 +211,7 @@ h5 {
    backgrounds with colors(it is ~1100px wide). */
 
 #body3 {
-  width: 960px;  /* fixed as Prof recommends */
+  width: 960px;  /* NHA test orig 960 */
   margin: 0 auto;
   background-color: floralwhite;
 }
@@ -234,6 +234,7 @@ h5 {
   font-weight: 700;  /* for bold effect */ 
   margin-left: 20px;
   color: green;
+  text-align: center;
 }
 
 #main3 #dog1 {
@@ -255,7 +256,111 @@ h5 {
   margin-bottom: 10px;
 }
 
-/* === STYLE ELEMENTS for map.html ================== */
+/* for Project3 final turn in I've added a slider to my
+   dogs page, so the folowing syles are for that slideshow */
+
+/* begin SLIDESHOW of slider dogs ====================== */
+
+.button {
+  font-size: .875em;  /* 14px, (14px/16px=.875em) */
+  line-height: 2.25rem;  /* at 36px (36px/16px=2.25em) */
+  letter-spacing: 0.1em;  /* puts little separation */
+  text-transform: uppercase;  /* more emphasis */
+  color: green;
+  font-weight: 600;  /* a little bolder */
+}
+
+/* adjust slider size from its wrapper */
+.slideshow{
+  position: relative;
+  width: 40%;  /* adjust to screen layout */
+  margin: 0 auto;
+  z-index: 0;
+}
+
+/* slideshow images */
+.slideshow img{
+  display: block;
+  width: 100%;  /* keep full image */
+  z-index: 0;
+}
+
+.slideshow ul li{
+  line-height: 0;
+  height: 100%;  /* keep each one at full size */
+}
+
+.image-is-visible{
+  display: contents;
+}
+
+.image{
+  display: none;
+}
+
+/* slideshow buttons */
+.slideshow .button{
+  width: 4rem;  /* use rem for flexibility */
+  border: none;
+  background: white;
+  opacity: 0.6;
+}
+
+#slideshow-left, #slideshow-left2{
+  position: absolute;
+  margin: -20px 0 0 0;
+  top: 50%;
+  left: 0%;
+  z-index: 0;
+  background-color: gray;
+  border: none;
+}
+
+#slideshow-right, #slideshow-right2{
+  position: absolute;
+  margin: -20px -30px 0 0;  /* make it centered */
+  top: 50%;
+  right: 0%;
+  z-index: 0;
+  background-color: gray;
+  border: none;
+}
+
+/* slideshow dots */
+.dot{
+  display: inline-block;
+  margin: 0 0.5em;  /* 8px */
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  background-color: grey;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.dot-is-selected{
+  display: inline-block;
+  margin: 0 0.5em;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  background-color: green; /* consistent w other greens */
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+#slideshow-dots{
+  margin: .5rem;
+  clear: both;
+  display: block;
+  text-align: center;
+
+}
+
+/* end SLIDESHOW for slider dogs ========================= */
+
+
+/* === STYLE ELEMENTS for map.html ======================= */
 /* I used style similar to Prof. K.'s iitmap example. */
 
 /* Always set the map height explicitly to define 
