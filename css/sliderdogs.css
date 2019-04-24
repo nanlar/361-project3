@@ -6,45 +6,37 @@
 */
 
 .button {
-  font-size: .875em; /* 14px = 16px * .875em */
-  line-height: 2.25rem; /* 36px = 16px * 2.25em */
-  font-weight: 500; /* medium */
-  letter-spacing: .0892857143em; /* 1.25 / 14px */
-  text-transform: uppercase;
+  font-size: .875em;  /* 14px, (14px/16px=.875em) */
+  line-height: 2.25rem;  /* at 36px (36px/16px=2.25em) */
+  letter-spacing: 0.1em;  /* puts little separation */
+  text-transform: uppercase;  /* more emphasis */
   color: green;
-  font-weight: 600;
+  font-weight: 600;  /* a little bolder */
 }
 
-.nopadding{
-  padding: 0;
-}
+/* BEGIN SLIDESHOW of slider dogs =============== */
 
-/* BEGIN SLIDESHOW */
-
-/* NHA test - change all from 100% to other% */
-
+/* NHA test - adjust slider size from its wrapper */
 .slideshow{
   position: relative;
-  width: 40%;  /* NHA test orig 100% */
+  width: 40%;  /* adjust to screen layout */
   margin: 0 auto;
   z-index: 0;
 }
 
 /* slideshow images */
-
 .slideshow img{
-  display: block;  /* NHA - keep!  */
-  width: 100%;  /* NHA - Keep */
+  display: block;
+  width: 100%;  /* keep full image */
   z-index: 0;
 }
 
 .slideshow ul li{
   line-height: 0;
-  height: 100%;  /* NHA test - no diff btw 100 and 50 */
+  height: 100%;  /* keep each one at full size */
 }
 
 .image-is-visible{
-  /*display: list-item; */
   display: contents;
 }
 
@@ -54,7 +46,7 @@
 
 /* slideshow buttons */
 .slideshow .button{
-  width: 4rem;
+  width: 4rem;  /* use rem for flexibility */
   border: none;
   background: white;
   opacity: 0.6;
@@ -66,30 +58,24 @@
   top: 50%;
   left: 0%;
   z-index: 0;
-  /* NHA */
   background-color: gray;
   border: none;
 }
 
 #slideshow-right, #slideshow-right2{
   position: absolute;
-  margin: -20px -30px 0 0;  /* NHA-dont change 20!  30 orig 0*/
+  margin: -20px -30px 0 0;  /* make it centered */
   top: 50%;
   right: 0%;
   z-index: 0;
-  /* NHA */
   background-color: gray;
   border: none;
-}
-
-#lbtn, #rbtn {
-  color: red;  /* NHA - not needed? */
 }
 
 /* slideshow dots */
 .dot{
   display: inline-block;
-  margin: 0 0.5em;  /* NHA - at 8px */
+  margin: 0 0.5em;  /* 8px */
   cursor: pointer;
   height: 1rem;
   width: 1rem;
@@ -104,7 +90,7 @@
   cursor: pointer;
   height: 1rem;
   width: 1rem;
-  background-color: green; /* NHA orig #0745ff; */
+  background-color: green; /* consistent w other greens */
   border-radius: 50%;
   vertical-align: middle;
 }
@@ -117,4 +103,4 @@
 
 }
 
-/* END SLIDESHOw */
+/* END SLIDESHOW ========================== */
