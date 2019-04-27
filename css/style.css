@@ -211,7 +211,7 @@ h5 {
    backgrounds with colors(it is ~1100px wide). */
 
 #body3 {
-  width: 960px;  /* NHA test orig 960 */
+  width: 960px;  /* keep at 960 as Prof K. requirement */
   margin: 0 auto;
   background-color: floralwhite;
 }
@@ -230,9 +230,9 @@ h5 {
   margin: 0;
 }
 
-#header h2 {
+#body3 h2 {
   font-weight: 700;  /* for bold effect */ 
-  margin-left: 20px;
+  margin-left: 19px;
   color: green;
   text-align: center;
 }
@@ -256,24 +256,34 @@ h5 {
   margin-bottom: 10px;
 }
 
-/* for Project3 final turn in I've added a slider to my
-   dogs page, so the folowing syles are for that slideshow */
+/* Project 3 note:
+   For Project3 final turn in I've added a slider to my
+   dogs page, so the folowing syles are for that slideshow.
+   Since this page is purposely done as a fixed layout,
+   the slideshow is not responsive. 
+   (My responsive page is the hometown page per Project2) */
 
 /* begin SLIDESHOW of slider dogs ====================== */
+
+#sliderdogs {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .button {
   font-size: .875em;  /* 14px, (14px/16px=.875em) */
   line-height: 2.25rem;  /* at 36px (36px/16px=2.25em) */
   letter-spacing: 0.1em;  /* puts little separation */
-  text-transform: uppercase;  /* more emphasis */
   color: green;
   font-weight: 600;  /* a little bolder */
+  /* text-transform: uppercase;  another option */
 }
 
 /* adjust slider size from its wrapper */
 .slideshow{
   position: relative;
-  width: 40%;  /* adjust to screen layout */
+  width: 40%;  /* make it similar to other images */
   margin: 0 auto;
   z-index: 0;
 }
@@ -380,7 +390,7 @@ h5 {
 #mtitle {
   color: darkslategray;
   margin-left: 25px;
-  /* may need to center it later */
+  text-align: center;
 }
 
 #istmap {
@@ -389,7 +399,7 @@ h5 {
 	margin: 25px auto;
 }
 
-/* this footer may not be needed */
+/* this footer is informational only */
 #fmap {
   font-size: 0.8em;
   font-weight: 700;
@@ -450,6 +460,7 @@ h5 {
   #footer2 {
     clear: both;
   }
+
 }
 
 /* ====== for desktops and wide screens ====== */
