@@ -27,7 +27,7 @@ function initMap(){
 }
 
 // the following line generates javascript undefined error on Inspect console 
-// therefore commented out for now, waiting Prof. input
+// therefore can be commented out too, waiting for Prof. input
 google.maps.event.addDomListener(window, "load", initMap);
 
 
